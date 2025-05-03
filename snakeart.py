@@ -24,16 +24,6 @@ class GameSprite(sprite.Sprite):
 
 
 
-
-
-
-
-
-
-
-
-
-
 class Player(GameSprite):
     def __init__(self,player_image,player_x,player_y,size_x,size_y,player_speed):
         super().__init__(player_image,player_x,player_y,size_x,size_y,player_speed)
@@ -102,7 +92,7 @@ while game:
         tails.add(t)
 
         tails.update()
-        tails.draw(fon)
+        tails.draw(window)
 
     wait -= 1
 
